@@ -1,0 +1,644 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.root {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.root .container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #011627;
+  color: white;
+}
+
+.root .container .navbar {
+  width: 100%;
+  height: 7%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: #011627;
+  border-bottom: 1px solid rgba(193, 193, 193, 0.281);
+}
+
+.root .container .navbar .navItem {
+  width: 80%;
+  height: 100%;
+}
+
+.root .container .navbar .navItem ul:nth-child(1) {
+  color: #6aa8df;
+}
+
+.root .container .navbar .navItem ul {
+  height: 100%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+}
+
+.root .container .navbar .navItem ul li {
+  padding-left: 1rem;
+}
+
+.root .container .navbar .navItem ul li a {
+  height: 100%;
+  text-decoration: none;
+  color: #a09e9e;
+  font-size: larger;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.root .container .navbar .navItem ul li a.active {
+  color: #64a0d5;
+  border-top: 3px solid #64a0d5;
+  padding: 0.9rem 4rem 1.5rem;
+}
+
+.root .container .headlinebox {
+  width: 100%;
+  height: 93%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+
+.root .container .headline-left {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12rem;
+}
+
+.root .container .headline-left .headline-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
+}
+
+.root .container .headline-left .headline-top p {
+  font-size: 1.5rem;
+}
+
+.root .container .headline-left .headline-top h1 {
+  font-size: 4rem;
+}
+
+.root .container .headline-left .headline-top h3 {
+  font-size: 3rem;
+  font-weight: 200;
+  color: #6aa8df;
+}
+
+.root .container .headline-left .headline-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  font-size: 1.8rem;
+}
+
+.root .container .headline-left .headline-bottom p {
+  color: rgba(255, 192, 203, 0.486);
+}
+
+.root .container .headline-left .headline-bottom p > span:nth-child(1) {
+  font-size: 2rem;
+  color: #6aa8df;
+}
+
+.root .container .headline-left .headline-bottom p > span:nth-child(2) {
+  font-size: 2rem;
+  color: #6aa8df;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+.root .container .headline-right {
+  width: 45%;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  border: 1px solid rgba(240, 240, 240, 0.185);
+  border-radius: 2%;
+  background-color: #0d1117;
+  -webkit-box-shadow: rgba(37, 54, 71, 0.25) 0px 40px 40px, rgba(37, 54, 71, 0.25) 0px -25px 40px, rgba(37, 54, 71, 0.25) 0px 4px 60px, rgba(37, 54, 71, 0.25) 0px 12px 150px, rgba(37, 54, 71, 0.25) 0px -3px 5px;
+          box-shadow: rgba(37, 54, 71, 0.25) 0px 40px 40px, rgba(37, 54, 71, 0.25) 0px -25px 40px, rgba(37, 54, 71, 0.25) 0px 4px 60px, rgba(37, 54, 71, 0.25) 0px 12px 150px, rgba(37, 54, 71, 0.25) 0px -3px 5px;
+}
+
+.root .container .headline-right .Welcoming {
+  width: 90%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.root .container .headline-right .Welcoming h4 {
+  color: #8a6e35;
+}
+
+.root .container .headline-right .Welcoming p {
+  color: rgba(128, 128, 128, 0.678);
+}
+
+.root .container .headline-right .headline-right-list {
+  background-color: #010409;
+  font-size: 2rem;
+  width: 90%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 3%;
+}
+
+.root .container .headline-right .headline-right-list div {
+  height: 0;
+  width: 100%;
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.7rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.root .aboutcontainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.root .aboutcontainer .aboutDiv {
+  max-width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #011627;
+}
+
+.root .aboutcontainer .aboutDiv .aboutdata {
+  width: 80%;
+  height: 90%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+  gap: 1.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.193);
+}
+
+.root .aboutcontainer .aboutDiv .aboutdata .about-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.7rem;
+}
+
+.root .aboutcontainer .aboutDiv .aboutdata .line {
+  height: 80%;
+  width: 2px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.226)), color-stop(rgba(255, 255, 255, 0.616)), to(rgba(255, 255, 255, 0.192)));
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.226), rgba(255, 255, 255, 0.616), rgba(255, 255, 255, 0.192));
+}
+
+.root .aboutcontainer .aboutDiv .aboutdata .number {
+  color: rgba(255, 255, 255, 0.657);
+  font-size: 1.7rem;
+  padding-left: 33px;
+}
+
+.root .aboutcontainer .aboutDiv .aboutdata .numberHell {
+  color: rgba(128, 128, 128, 0.575);
+}
+
+.root .aboutcontainer .aboutDiv .exploer {
+  height: 90%;
+  width: 20%;
+  border: 1px solid rgba(255, 255, 255, 0.193);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #011627;
+}
+
+.root .aboutcontainer .aboutDiv .exploer .exploerData {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+  padding: 0.8rem;
+}
+
+.root .aboutcontainer .aboutDiv .exploer h4 {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: .5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.193);
+}
+
+.root .aboutcontainer .aboutDiv .exploer p {
+  padding-left: 20px;
+}
+
+.root .aboutcontainer .aboutDiv .exploer p .folder1 {
+  color: #f3cb1b;
+}
+
+.root .aboutcontainer .aboutDiv .exploer p .folder2 {
+  color: #e13ef7;
+}
+
+.root .aboutcontainer .aboutDiv .exploer p .fa-react {
+  color: #01d9ff;
+}
+
+.root .aboutcontainer .aboutDiv .exploer p .fa-node-js {
+  color: greenyellow;
+}
+
+.root .aboutcontainer .aboutDiv .exploer p .fa-html5 {
+  color: red;
+}
+
+.root .aboutcontainer .aboutDiv .exploer p .fa-css3-alt {
+  color: #2f2fe7;
+}
+
+.root .projects {
+  width: 100vw;
+  height: 100vh;
+  background-color: #011627;
+  color: white;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 4rem;
+}
+
+.root .projects .cards {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.root .projects .cards .cardsData {
+  width: 40%;
+  height: 50%;
+}
+
+.root .projects .cards .cardsData .project_1 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.514);
+  border-radius: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  -webkit-box-shadow: rgba(37, 54, 71, 0.25) 0px 40px 40px, rgba(37, 54, 71, 0.25) 0px -25px 40px, rgba(37, 54, 71, 0.25) 0px 4px 60px, rgba(37, 54, 71, 0.25) 0px 12px 150px, rgba(37, 54, 71, 0.25) 0px -3px 5px;
+          box-shadow: rgba(37, 54, 71, 0.25) 0px 40px 40px, rgba(37, 54, 71, 0.25) 0px -25px 40px, rgba(37, 54, 71, 0.25) 0px 4px 60px, rgba(37, 54, 71, 0.25) 0px 12px 150px, rgba(37, 54, 71, 0.25) 0px -3px 5px;
+}
+
+.root .projects .cards .cardsData .project_1 .project_1_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 15rem;
+  padding-top: 5px;
+}
+
+.root .projects .cards .cardsData .project_1 .project_1_title h4 {
+  color: orange;
+}
+
+.root .projects .cards .cardsData .project_1 .project_1_title p {
+  color: rgba(128, 128, 128, 0.801);
+}
+
+.root .projects .cards .cardsData .project_1 .project-info {
+  width: 85%;
+  height: 80%;
+  background-color: #000000;
+  border-radius: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 1.5rem;
+}
+
+.root .projects .cards .cardsData .discrip_project_1 {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.root .projects .cards .cardsData .discrip_project_1 button {
+  width: 30%;
+  padding: .6rem;
+  margin-top: 1.5rem;
+  background-color: transparent;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: 1px solid rgba(128, 128, 128, 0.432);
+  cursor: pointer;
+}
+
+.root .projects .cards .cardsData .discrip_project_1 button a {
+  color: #6aa8df;
+  text-decoration: none;
+}
+
+.root .projects .cards .cardsData2 {
+  width: 40%;
+  height: 50%;
+}
+
+.root .projects .cards .cardsData2 .project_2 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.514);
+  border-radius: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  -webkit-box-shadow: rgba(37, 54, 71, 0.25) 0px 40px 40px, rgba(37, 54, 71, 0.25) 0px -25px 40px, rgba(37, 54, 71, 0.25) 0px 4px 60px, rgba(37, 54, 71, 0.25) 0px 12px 150px, rgba(37, 54, 71, 0.25) 0px -3px 5px;
+          box-shadow: rgba(37, 54, 71, 0.25) 0px 40px 40px, rgba(37, 54, 71, 0.25) 0px -25px 40px, rgba(37, 54, 71, 0.25) 0px 4px 60px, rgba(37, 54, 71, 0.25) 0px 12px 150px, rgba(37, 54, 71, 0.25) 0px -3px 5px;
+}
+
+.root .projects .cards .cardsData2 .project_2 .project_2_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 15rem;
+  padding-top: 5px;
+}
+
+.root .projects .cards .cardsData2 .project_2 .project_2_title h4 {
+  color: orange;
+}
+
+.root .projects .cards .cardsData2 .project_2 .project_2_title p {
+  color: rgba(128, 128, 128, 0.801);
+}
+
+.root .projects .cards .cardsData2 .project_2 .project-info {
+  width: 85%;
+  height: 80%;
+  background-color: #000000;
+  border-radius: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 1.5rem;
+}
+
+.root .projects .cards .cardsData2 .project_2 .project-info ul {
+  list-style-type: none;
+}
+
+.root .projects .cards .cardsData2 .project_2 .project-info ul li {
+  padding: 5px;
+  font-size: 1.3rem;
+}
+
+.root .projects .cards .cardsData2 .discrip_project_2 {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.root .projects .cards .cardsData2 .discrip_project_2 button {
+  width: 30%;
+  height: auto;
+  padding: .6rem;
+  margin-top: 1.5rem;
+  background-color: transparent;
+  color: #6aa8df;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  border: 1px solid rgba(128, 128, 128, 0.432);
+  cursor: pointer;
+}
+
+.root .footer {
+  background-color: #011627;
+  color: white;
+  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.493);
+  gap: 1rem;
+}
+
+.root .footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 7%;
+  border-left: 1px solid rgba(128, 128, 128, 0.493);
+}
+
+.root .footer div a {
+  color: white;
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=main.css.map */
